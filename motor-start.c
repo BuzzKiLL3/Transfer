@@ -40,14 +40,14 @@ int main(void)
     }
 
     // Run the motor clockwise
-    printf("Running motor clockwise\n");
+    printf("Clockwise\n");
     runMotor(1);
-    sleep(5); // Keep the motor running clockwise for 5 seconds
+    sleep(50); 
 
     // Run the motor counterclockwise
-    printf("Running motor counterclockwise\n");
+    printf("Counterclockwise\n");
     runMotor(0);
-    sleep(5); // Keep the motor running counterclockwise for 5 seconds
+    sleep(50); 
 
     // Stop the motor
     printf("Stopping motor\n");
