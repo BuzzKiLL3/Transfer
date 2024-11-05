@@ -16,8 +16,8 @@ def cycle(frame):
     armed = False
     # FINDS FACES ON IMAGES
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-    cv2.imwrite("frame.jpg", frame)
-    img = cv2.imread('frame.jpg')
+    cv2.imwrite("om.jpg", frame)
+    img = cv2.imread('om.jpg')
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, 1.1, 4)
     print(faces)
@@ -57,9 +57,9 @@ def cycle(frame):
             cv2.line(img, (box_center_x, top), (box_center_x, bottom), (0, 0, 255), 3)
             cv2.line(img, (left, box_center_y), (right, box_center_y), (0, 0, 255), 3)
             cv2.line(img, (box_center_x, box_center_y), (screen_center_x, screen_center_y), (0, 0, 255), 2)
-            cv2.imshow('frame', img)
+            cv2.imshow('om', img)
         else:
-            cv2.imshow('frame', img)
+            cv2.imshow('om', img)
 
 
 def main():
