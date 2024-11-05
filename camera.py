@@ -24,7 +24,7 @@ def cycle(frame):
     for (x, y, w, h) in faces:
         cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 2)
     if len(faces) == 0:
-        cv2.imshow('frame', img)
+        cv2.imshow('Om', img)
         # GIVES POSITIONS ON WHERE TO DRAW A BOX AND LINES AROUND FACE
     else:
         (x, y, w, h) = faces[0]
